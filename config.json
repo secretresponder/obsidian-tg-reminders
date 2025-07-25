@@ -1,0 +1,12 @@
+{
+  "TELEGRAM_TOKEN": "7868190531:AAH2F9F32O5IU4j_jaLn_JzrdzzPZPWB5Cg",
+  "CHAT_ID": -1002748499741,
+  "TOPIC_ID": "1422",
+  "TASKS_FOLDER": "D:/Obsidian/Self-Vault/Journal",
+  "CHECK_INTERVAL": 60,
+  "default_warn_before_start": ["15m"],
+  "default_warn_during": ["0m"],
+  "default_warn_overdue": ["15m", "1440m"],
+  "tolerance_before_sec": 600,   
+  "tolerance_during_sec": 1800   
+}
