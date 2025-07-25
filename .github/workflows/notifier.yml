@@ -1,0 +1,28 @@
+name: Obsidian Notifier
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'     # ⏱ Запуск каждые 5 минут
+  workflow_dispatch:           # 🖐 Ручной запуск через интерфейс GitHub
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest     # 🐧 Используется Ubuntu Runner
+
+    steps:
+      - name: 📥 Клонируем репозиторий
+        uses: actions/checkout@v3
+
+      - name: 🐍 Устанавливаем Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Устанавливаем зависимости
+        run: pip install -r requirements.txt
+
+      - name: 🚀 Запускаем main.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: python main.py
