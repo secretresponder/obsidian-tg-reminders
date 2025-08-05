@@ -18,8 +18,7 @@
   "tolerance_before_sec": 600,   \\ ВРЕМЯ, В ТЕЧЕНИЕ КОТОРОГО СКРИПТ МОЖЕТ ОБРАБОТАТЬ ОПОЗДАВШЕЕ УВЕДОМЛЕНИЕ "ПЕРЕД ЗАДАЧЕЙ", СЕК
   "tolerance_during_sec": 1200   \\ ВРЕМЯ, В ТЕЧЕНИЕ КОТОРОГО СКРИПТ МОЖЕТ ОБРАБОТАТЬ ОПОЗДАВШЕЕ УВЕДОМЛЕНИЕ "ВО ВРЕМЯ", СЕК
 }
-
-# \\ ПОСЛЕДНИЕ 2 СТРОКИ НУЖНЫ НА СЛУЧАЙ, ЕСЛИ У ВАС НЕСТАБИЛЬНОЕ СОЕДИНЕНИЕ, ЧТОБЫ БОТ МОГ ОТПРАВИТЬ УВЕДОМЛЕНИЕ С ЗАДЕРЖКОЙ
+\\ ПОСЛЕДНИЕ 2 СТРОКИ НУЖНЫ НА СЛУЧАЙ, ЕСЛИ У ВАС НЕСТАБИЛЬНОЕ СОЕДИНЕНИЕ, ЧТОБЫ БОТ МОГ ОТПРАВИТЬ УВЕДОМЛЕНИЕ С ЗАДЕРЖКОЙ
 
 # 🧠 Obsidian Task Notifier Bot
 
@@ -79,3 +78,4 @@ project/
 
 python-telegram-bot==20.7
 nest_asyncio
+
