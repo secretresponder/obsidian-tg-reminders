@@ -1,8 +1,7 @@
 
 # Obsidian launch
 
-Запускается из templater при наличии скрипта и заметки автозапуска(лежит в папке с шаблонами)
-
+Запускается из templater через JS обёртку, либо вручную через .bat
 
 # Config
 
@@ -78,6 +77,7 @@ project/
 
 python-telegram-bot==20.7
 nest_asyncio
+
 
 
 
